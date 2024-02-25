@@ -1,0 +1,626 @@
+@import  url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu > div > nav > ul > li > a, h1,  h2 {
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.btn {
+    border: none;
+    color: #fff;
+    background-color:  hsl(224, 93%, 58%);
+    cursor: pointer;
+    font-weight: bold;
+}
+.img-container img {
+    width: 100%;
+}
+
+
+/* header */
+.menu-wrapper .toggler, .menu-wrapper .humberger{
+    visibility: hidden;
+}
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    z-index: 1;
+    height: 15vh;
+    width: 85%;
+    margin: auto;
+}
+
+.logo img {
+    width: 130px;
+}
+.logo {
+    flex: 2;
+}
+.menu {
+    width: 200px;
+}
+.menu > div > nav > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menu > div > nav > ul > li {
+    /* font-size: 20px; */
+    list-style: none;
+    text-transform: capitalize;
+} 
+.menu > div > nav > ul > li > a{
+    color: hsl(0, 0%, 35%);
+    text-decoration: none;
+    font-size: 14px;
+}
+.menu > div > nav > ul > li > a:hover {
+    color: hsl(224, 93%, 58%);
+}
+/* </header> */
+/* <main> */
+main {
+    overflow-x: hidden;
+}
+
+
+/* <showcase> */
+
+.showcase-text {
+    display: flex;
+    align-items: center;
+}
+.wrapper {
+    max-width: 450px;
+}
+.wrapper h1 {
+    font-size: calc(1vw + 1.2rem);
+    line-height: 1.2;
+}
+.wrapper p {
+    margin: 20px 0;
+    color: hsl(0, 0%, 35%);
+}
+.showcase-img img {
+    width: 100%;
+}
+.showcase-form {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.showcase-form input{
+    padding: 10px;
+    flex: 2;
+    outline: none;
+    border: 1px solid #000;
+}
+.showcase-form .btn{
+    flex: 1;
+}
+/* </showcase> */
+
+/* <productive> */
+
+.productive {
+    margin-top: 150px;
+    padding: 100px 0;
+    background: url(images/bg-curve-desktop.svg) no-repeat center center/cover;
+    position: relative;
+}
+.coverd-img-pg img {
+    width: 100%;
+}
+.coverd-img-pg {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+}
+
+h2 {
+    font-size: calc(1vw + 1.2rem);
+}
+p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+.link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    color: #3DA08F;
+    text-decoration: none;
+}
+.link-img {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #3DA08F;
+}
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    width: 270px;
+    box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.1);
+    
+}
+.profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-pic img {
+    width: 100%;
+}
+.profile-info li:nth-child(1) {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.profile-info li:nth-child(2) {
+    font-size: 0.7rem;
+}
+/* get-access */
+
+.get-access {
+    padding: 50px 0;
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(240, 75%, 98%);
+}
+.get-access .wrapper p {
+    color: hsl(240, 75%, 98%);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.form input {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+.form .btn {
+    width: max-content;
+    padding:15px 25px;
+    border-radius: 2px;
+}
+
+/* </main> */
+
+/* footer */
+
+footer {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+}
+footer .container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+footer ul:not(:last-child) li{
+    margin: 5px 0;
+}
+
+.contact ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+}
+.links, .social ,.darkModeToggle{
+    padding: 40px 0;
+}
+.links a, .contact a {
+    transition: .3s;
+}
+.links a:hover, .contact a:hover {
+    color:hsl(238, 22%, 44%);
+}
+.social ,.darkModeToggle{
+    display: flex;
+    gap: 10px;
+}
+.social li,.darkModeToggle {
+    padding: 10px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+.social li:hover,.darkModeToggle {
+    border: 1px solid hsl(224, 93%, 58%);
+    color: hsl(224, 93%, 58%);
+}
+footer > p {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+    /*menu */
+    .menu-wrapper .toggler, .menu-wrapper .humberger{
+        visibility: visible;
+    }
+    .cards .card img {
+        min-width: 130px;
+        min-height: 130px;
+    }
+    .menu-wrapper {
+        z-index: 1;
+        left: 0;
+        top: 0;
+        padding: 0 45px;
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+    }
+    .menu-wrapper .toggler {
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+        position: absolute;
+        right: 50px;
+        top: 10px;
+        background-color: #fff;
+        cursor: pointer;
+        opacity: 0;
+    }
+    .menu-wrapper .humberger {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        right: 0;
+        top: 0;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        z-index: 1;
+    }
+    
+    .menu-wrapper .humberger > div {
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        position: relative;
+        z-index: 1;
+        transition: .4s;
+    }
+    .menu-wrapper .humberger > div::after,
+    .menu-wrapper .humberger > div::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #000;
+        top: -10px;
+        z-index: 1;
+    }
+    .menu-wrapper .humberger > div::before {
+        top: 10px;
+    }
+    /* toggler animation */
+    
+    
+    .menu-wrapper .toggler:checked + .humberger > div {
+        transform: rotate(135deg);
+        background-color: #fff;
+    }
+    .menu-wrapper .toggler:checked + .humberger > div::after,
+    .menu-wrapper .toggler:checked + .humberger > div::before {
+        transform: rotate(90deg);
+        top: 0;
+        background-color: #fff;
+    }
+    .menu-wrapper .toggler:checked:hover + .humberger > div {
+        transform: rotate(225deg);
+    }
+    .menu-wrapper .toggler:checked + .humberger {
+        background-color: transparent;
+    }
+    /* show menu */
+    .menu-wrapper .toggler:checked ~ .menu {
+        visibility: visible;
+    }
+    .menu-wrapper .toggler:checked ~ .menu > div {
+        right: 0;
+    }
+    
+    .menu-wrapper .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .4s;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    .menu-wrapper .menu > div {
+        height: 100%;
+        position: absolute;
+        right: -300px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .4s;
+        background-color: hsl(238, 22%, 44%);
+    }
+    .menu-wrapper .menu > div > nav {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .4s;
+    }
+    .menu-wrapper .menu > div > nav > ul { 
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .menu-wrapper .menu > div > nav > ul > li {
+        list-style: none;
+        padding: 5px;
+        font-size: 1.4rem;
+    }
+    
+    .menu-wrapper .menu > div > nav > ul > li > a {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    /* </menu>*/
+    .showcase {
+        margin-top: 16vh;
+        text-align: center;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .showcase-text, .text-wrapper {
+        order: 2;
+    }
+    .img-container {
+        order: 1;
+    }
+    footer .container{
+        grid-auto-flow: row;
+    }
+    .links, .social ,.darkModeToggle{
+        padding: 0;
+    }
+    .social {
+        justify-self: center;
+    }
+    .showcase-form {
+        flex-direction: column;
+    }
+    .btn {
+        padding: 15px;
+    }
+    .coverd-img-pg {
+        top: -30px;
+    }
+    .form {
+        max-width: 400px;
+    }
+    .form input {
+        width: 100%;
+    }
+    .form .btn {
+        width: 100%;
+    }
+    .text-wrapper h2{
+        text-align: center;
+    }
+    .link{
+        justify-content: center;
+    }
+    .productive {
+        padding: 50px 0;
+    }
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        align-self: center;
+    }
+    .logo img{
+        width:90px;
+    }
+}
+
+.dark-mode {
+  background-image: none;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Update styles for specific elements */
+.dark-mode header {
+  background-color: #000;
+}
+.dark-mode .productive {
+  background-color: #000;
+}
+
+.dark-mode footer {
+  background-color: #000;
+}
+
+.dark-mode section {
+  background-color: #000;
+
+}
+
+.dark-mode div {
+  background-color: #000;
+  color: white;
+}
+.dark-mode source{
+  background-color: #000;
+}
+.dark-mode img{
+  background-color: #000;
+}
+
+.dark-mode picture {
+  background-image: none;
+  background-color: #000;
+
+}
+
+/* Styles for dark mode image */
+.dark-mode-image img {
+  filter: brightness(0);
+}
+
+/* Styles for dark mode sections */
+.dark-mode-section {
+  background-image: none;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.darkbutton {
+  background-color: #fff;
+  color: black;
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.dark-mode{
+  background-image: none;
+  --background: hsl(216, 53%, 9%);
+  --Very-Dark-Blue: hsl(240, 75%, 98%);
+  --black: #fff;
+  --Desaturated-Blue: hsl(216, 53%, 9%);
+  --dark-blue: #1c2431;
+}
+
+.dark-mode .productive {
+  background-image: none; /* Remove background image */
+  background-color: var(--second-backround); /* Set a dark background color */
+}
+
+/* Styles for dark mode */
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Update styles for specific elements */
+  .dark-mode header {
+    background-color: #000;
+  }
+  
+  .dark-mode footer {
+    background-color: #000;
+  }
+  
+  .dark-mode section {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dark-mode .showcase-text,
+  .dark-mode .productive,
+  .dark-mode .get-access {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dark-mode .menu-wrapper {
+    background-color: #000;
+  }
+  
+  .dark-mode .menu > div > nav > ul > li > a {
+    color: #fff;
+  }
+  
+  .dark-mode .btn {
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+  }
+  
+  .dark-mode .link,
+  .dark-mode .link-img {
+    color: #3DA08F;
+  }
+  
+  .dark-mode .link-img {
+    border-bottom: 1px solid #3DA08F;
+  }
+  
+  .dark-mode .card {
+    box-shadow: 2px 2px 20px -5px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode .social li {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  .dark-mode .social li:hover {
+    border: 1px solid hsl(224, 93%, 58%);
+    color: hsl(224, 93%, 58%);
+  }
+  
+  .dark-mode .showcase-img img,
+  .dark-mode .coverd-img-pg img {
+    filter: brightness(0);
+  }
+  .darkModeToggle{
+    border-radius: ;
+  }
