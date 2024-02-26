@@ -1,18 +1,13 @@
-const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
-
-darkModeToggle.addEventListener('click', () => {
-
-  body.classList.toggle('dark-mode');
-
-
-  const isDarkMode = body.classList.contains('dark-mode');
-  localStorage.setItem('darkMode', isDarkMode);
-});
-
-
-const isDarkMode = JSON.parse(localStorage.getItem('darkMode'));
-if (isDarkMode) {
-  body.classList.add('dark-mode');
-}
-
+    var moon = document.getElementById("moon");
+    moon.onclick = function(){
+      document.body.classList.toggle("dark-mode");
+      if(document.body.classList.contains("dark-mode")){
+        moon.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        nav_img.src = "./images/logo white.svg";
+        quotes.src = "./images/icon-quotes dark.svg";
+      } else {
+        moon.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        nav_img.src = "./images/logo.svg";
+        quotes.src = "./images/icon-quotes.svg";
+      }
+    }
