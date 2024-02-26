@@ -5,40 +5,63 @@
     margin: 0;
     padding: 0;
 }
+#moon{
+    border: none;
+    outline: none;
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding-top: 2.3px;
+}
 
-
+/* Header styles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}header {
+}
+
+
+ 
+ @media (max-width: 650px){
+    #nav_img{
+        margin-right: 50px;
+    }
+ }
+
+  header {
     background-color: #fff;
     padding: 20px 0;
   
 }
+
+/* Add this CSS for making the navigation bar responsive */
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    }
+    justify-content: space-between;
+   
+}
 
 nav img {
     width: 150px;
- 
-   
+    margin-right: 800px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: end;
-  
-  
+    justify-content: flex-end;
+    gap: 20px; /* Adjust the gap as needed */
 }
+
+
+
 
 nav ul li {
     margin-right: 20px;
-    padding: 2px;
+    padding: 1px;
     display: flex;
    
     
@@ -53,6 +76,7 @@ nav ul li a {
    
     color: hsl(238, 22%, 44%);
 }
+
 
 
 body {
@@ -445,7 +469,7 @@ footer > p {
     .menu-wrapper .menu > div > nav > ul { 
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
+      
     }
     .menu-wrapper .menu > div > nav > ul > li {
         list-style: none;
@@ -600,7 +624,7 @@ footer > p {
     color: #fff;
   }
   
-  /* Update styles for specific elements */
+  
   .dark-mode header {
     background-color: #000;
   }
@@ -660,6 +684,16 @@ footer > p {
   .dark-mode .showcase-img img,
   .dark-mode .coverd-img-pg img {
     filter: brightness(0);
+  }
+ 
+.dark-mode header {
+    background-color: #000;
+  }
+  
+  .dark-mode nav img {
+   
+    filter: brightness(1); 
+    opacity: 1; 
   }
   
   
